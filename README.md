@@ -30,13 +30,14 @@ NetworkManager executes scripts in this directory in response to network events.
 2. Make the file executable:
 - ```sudo chmod +x /etc/NetworkManager/30-gsconnect-firewall.sh```
 3. The current configuration does not automatically detect user variables, therefore these must be added hardcoded to the run_as_user function
-  *Note on restart/reboot some of these variables will change breaking the script, currently working on this issue*
-- To obtain the necessary values run these commands and copy the results to the run_as_user variables:
+- To obtain the necessary values run these commands and copy the results to the run_as_user function:
   - USER_NAME: ```whoami```
   - USER_ID: ```id -u```
   - USER_DISPLAY: ```echo $DISPLAY```
   - USER_DBUS_ADDRESS: ```echo $DBUS_SESSION_BUS_ADDRESS```
   - USER_XAUTHORITY: ```echo $XAUTHORITY```
+
+*Note on restart/reboot some of these variables will change breaking the script, currently working on this issue*
 ## Requirements
 1. NetworkManager
 2. Uncomplicated Firewall (ufw)
