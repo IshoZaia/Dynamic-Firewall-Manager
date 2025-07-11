@@ -29,7 +29,7 @@ NetworkManager executes scripts in this directory in response to network events.
 - Recommended name would be *30-gsconnect-firewall.sh*
 2. Make the file executable:
 - ```sudo chmod +x /etc/NetworkManager/30-gsconnect-firewall.sh```
-3. The current configuration does not automatically detect user variables, therefore these must be added hardcoded to the run_as_user function
+3. The current configuration does not automatically detect user variables, therefore these must be hardcoded to the run_as_user function
 - To obtain the necessary values run these commands and copy the results to the run_as_user function:
   - USER_NAME: ```whoami```
   - USER_ID: ```id -u```
