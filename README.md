@@ -1,4 +1,4 @@
-# Open-Port---GSConnect WIP
+# Dynamic Firewall Manager for GSConnectWIP
 This script is a NetworkManager dispatcher that simplifies the management of UFW firewall rules for GSConnect. It opens the necessary ports only when connected to a trusted network and closes them upon disconnection.
 
 For Wi-Fi connections, it adds a layer of security by verifying the MAC address of the access point, protecting against potential SSID spoofing and evil twin attacks.
